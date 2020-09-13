@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.teamBlock {
+  background: #efefef;
+  padding: 20px;
+  margin-top: 20px;
+}
