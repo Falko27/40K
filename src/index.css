@@ -17,3 +17,15 @@ code {
   padding: 20px;
   margin-top: 20px;
 }
+
+.teamBlock h2 span {
+  font-size: 14px;
+  float: right;
+  position: relative;
+  top: 10px;
+}
+
+.teamBlock p {
+  margin: 0 0 10px;
+  border-bottom: solid 1px #bbb2b2;
+}

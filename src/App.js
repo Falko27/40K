@@ -1,5 +1,5 @@
 import React from 'react';
-import Team from './components/teams/index.js'
+import Team from './components/teams/team.js'
 
 
 function App() {
