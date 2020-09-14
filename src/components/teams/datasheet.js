@@ -1,53 +1,128 @@
 const datasheet = {
-    team: [{
-        name: 'Necrons',
-        id: 0 , 
-        units: [{
-            name: 'Skorpekh Destroyers',
-            power: 6, 
-            M: 8,
-            WS: 3,
-            BS: 3,
-            S: 5,
-            T: 5,
-            W: 3,
-            A: 3,
-            Ld: 10,
-            Sv: 3
+  team: [
+    {
+      name: "Necrons",
+      id: 0,
+      units: [
+        {
+          No: 3,
+          id: 0,
+          name: "Skorpekh Destroyers",
+          power: 6,
+          M: 8,
+          WS: 3,
+          BS: 3,
+          S: 5,
+          T: 5,
+          W: 3,
+          A: 3,
+          Ld: 10,
+          Sv: 3,
         },
         {
-            name: 'Overlord',
-            power: 5, 
-            M: 5,
-            WS: 2,
-            BS: 2,
-            S: 5,
-            T: 5,
-            W: 5,
-            A: 3,
-            Ld: 10,
-            Sv: 3
-        }]
+          No: 1,
+          id: 1,
+          name: "Overlord",
+          power: 5,
+          M: 5,
+          WS: 2,
+          BS: 2,
+          S: 5,
+          T: 5,
+          W: 5,
+          A: 3,
+          Ld: 10,
+          Sv: 3,
+        },
+        {
+          No: 3,
+          id: 2,
+          name: "Canoptek Scarab Swarms",
+          power: 2,
+          M: 10,
+          WS: 4,
+          BS: "",
+          S: 3,
+          T: 3,
+          W: 4,
+          A: 4,
+          Ld: 10,
+          Sv: 6,
+        },
+        {
+          No: 10,
+          id: 3,
+          name: "Necron Warriors",
+          power: 5,
+          M: 5,
+          WS: 3,
+          BS: 3,
+          S: 4,
+          T: 4,
+          W: 1,
+          A: 1,
+          Ld: 10,
+          Sv: 4,
+        },
+      ],
     },
     {
-        name: 'Space Marines',
-        id: 1,
-        units: [
-            {
-                
-            }
-        ]
+      name: "Space Marines",
+      id: 1,
+      units: [
+        {
+          No: 1,
+          id: 0,
+          name: "Primaris Captain",
+          power: 5,
+          M: 6,
+          WS: 2,
+          BS: 2,
+          S: 4,
+          T: 4,
+          W: 6,
+          A: 5,
+          Ld: 9,
+          Sv: 3,
+        },
+        {
+          No: 4,
+          id: 1,
+          name: "Assault Intercessor Squad",
+          power: 5,
+          M: 6,
+          WS: 3,
+          BS: 3,
+          S: 4,
+          T: 4,
+          W: 2,
+          A: 2,
+          Ld: 7,
+          Sv: 3,
+        },
+        {
+          No: 3,
+          id: 2,
+          name: "Outrider Squad",
+          power: 6,
+          M: 14,
+          WS: 3,
+          BS: 3,
+          S: 4,
+          T: 5,
+          W: 4,
+          A: 2,
+          Ld: 7,
+          Sv: 3,
+        },
+      ],
     },
     {
-        name: 'T’au',
-        id: 2,
-        units: [
-            {
+      name: "T’au",
+      id: 2,
+      units: [],
+    },
+  ],
+};
 
-            }
-        ]
-    }
-]
-}    
-
-export default datasheet
+export default datasheet;

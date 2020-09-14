@@ -22,7 +22,7 @@ const Team = () => {
   };
 
   return (
-    <div className="App">
+    <div className="selectedTeam">
       <label>Select a team</label>
       <select
         value="select a team"
@@ -37,7 +37,7 @@ const Team = () => {
         ))}
       </select>
       {team && (
-        <div className="teamBlock col-md-12">
+        <div className="titleBlock col-md-12">
           <p>You have selected: {selectedTeam}</p>
         </div>
       )}
