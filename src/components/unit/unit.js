@@ -10,7 +10,6 @@ const Unit = (props) => {
   );
 
   const myUnits = filteredTeams[0].units;
-  console.log("chosen team", myUnits);
 
   const addToArmy = (e) => {
     let armyList = document.querySelector(".armyList");
@@ -19,7 +18,7 @@ const Unit = (props) => {
     armyList.append(clone);
   };
 
-  if (myUnits.length > 0) {
+  if (props.selectedTeam !== "" && myUnits.length > 0) {
     return (
       <div>
         <div className="input-group">

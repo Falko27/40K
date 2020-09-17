@@ -19,6 +19,7 @@ const Team = () => {
 
   const handleChange = (e) => {
     updateTeam(e.target.value);
+    console.log("handle...");
   };
 
   return (
@@ -41,7 +42,7 @@ const Team = () => {
           <p>You have selected: {selectedTeam}</p>
         </div>
       )}
-      <Unit selectedTeam={selectedTeam} />
+      <Unit selectedTeam={selectedTeam} myUnits={selectedTeam} />
     </div>
   );
 };
