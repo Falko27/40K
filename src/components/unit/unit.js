@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import datasheet from "../teams/datasheet";
 
 const Unit = (props) => {
@@ -8,6 +8,13 @@ const Unit = (props) => {
   const filteredTeams = team.filter((item) =>
     item.name.includes(props.selectedTeam)
   );
+
+  const updateSearch = (e) => {
+    setSearch(e.target.value)
+    console.log(search)
+  }
+
+  const [search, setSearch] = useState('')
 
   const myUnits = filteredTeams[0].units;
 
@@ -28,13 +35,14 @@ const Unit = (props) => {
             </span>
           </div>
           <input
+            onChange={updateSearch}
             type="text"
             className="form-control"
             aria-label="Default"
             aria-describedby="inputGroup-sizing-default"
           />
         </div>
-        {myUnits.map((unit) => (
+        {myUnits.filter(name => name.name.includes(search)).map((unit) => (
           <div key={unit.id}>
             <div className="teamBlock">
               <div onClick={addToArmy} className="addToArmy">
