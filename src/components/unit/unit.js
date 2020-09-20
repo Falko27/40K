@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import datasheet from "../teams/datasheet";
 
 const Unit = (props) => {
-  console.log(props);
   const team = datasheet.team;
 
   const filteredTeams = team.filter((item) =>
@@ -11,7 +10,6 @@ const Unit = (props) => {
 
   const updateSearch = (e) => {
     setSearch(e.target.value)
-    console.log(search)
   }
 
   const [search, setSearch] = useState('')
